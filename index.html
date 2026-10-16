@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Custos - Viagem Curitiba x Recife</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js para renderização dos gráficos -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>✈️ Cronograma de Viagem: Curitiba ➔ Recife</h1>
+      <p>Dashboard Interativo de Análise Financeira e Comparação de Custos</p>
+    </header>
+
+    <!-- Resumo em Cards -->
+    <section class="cards-grid">
+      <div class="card">
+        <h3>Total da Viagem</h3>
+        <p class="value">R$ 2.950,00</p>
+      </div>
+      <div class="card">
+        <h3>Maior Custo</h3>
+        <p class="value">Passagem (R$ 1.300,00)</p>
+      </div>
+      <div class="card">
+        <h3>Dias/Diárias Hospedagem</h3>
+        <p class="value">5 Dias</p>
+      </div>
+    </section>
+
+    <!-- Grid de Gráficos -->
+    <main class="charts-grid">
+      <div class="chart-card">
+        <h2>Distribuição do Valor Final Total (R$)</h2>
+        <canvas id="chartDoughnut"></canvas>
+      </div>
+
+      <div class="chart-card">
+        <h2>Comparação de Preços Unitários (R$)</h2>
+        <canvas id="chartBar"></canvas>
+      </div>
+
+      <div class="chart-card">
+        <h2>Frequência / Quantidade por Categoria</h2>
+        <canvas id="chartRadar"></canvas>
+      </div>
+
+      <div class="chart-card">
+        <h2>Relação: Valor Total x Preço Unitário</h2>
+        <canvas id="chartMixed"></canvas>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
